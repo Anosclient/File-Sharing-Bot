@@ -88,8 +88,14 @@ async def start_command(client: Client, message: Message):
         reply_markup = InlineKeyboardMarkup(
             [
                 [
-                    InlineKeyboardButton("❤️‍🔥Main Channel❤️‍🔥", url="https://t.me/Animae_Unfold")
-                ]
+                    InlineKeyboardButton("❤️‍🔥Main Channel❤️‍🔥", url="https://t.me/Anime_Unfold")
+                ],
+                [
+                    InlineKeyboardButton("❤️‍🔥Ongoing Anime❤️‍🔥", url="https://t.me/Ongoing_Anime_Unfold")
+                ],
+                [
+                    InlineKeyboardButton("❤️‍🔥Dubbed Anime❤️‍🔥", url="https://t.me/Ongoing_Dub_Anime")
+                ],
             ]
         )
         await message.reply_text(
